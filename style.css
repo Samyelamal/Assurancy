@@ -20,12 +20,23 @@ body {
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
+    text-align: center;
+  }
+
+  img {
+    width: 150px; /* Taille de l'image */
+      height: 150px; /* Assure-toi que l'image reste carrée */
+      border-radius: 50%; /* Arrondir les coins pour faire un cercle */
+      object-fit: cover;
+      margin-top: -20px; 
+      align-items: center;
   }
   
   h1 {
     text-align: center;
     color: #fff;
     margin-bottom: 25px;
+    background: url(image.png) center/ cover no-repeat;
   }
   
   .form-group {
@@ -48,7 +59,6 @@ body {
     border: 1px solid #ccc;
     font-size: 16px;
     box-sizing: border-box;
-    text-align: center;
   }
   
   input[name="date_achat"] {
@@ -95,8 +105,10 @@ body {
     align-items: center;
     font-weight: bold;
     color: #fff;
+    text-align: center;
   }
   
+
   @media (max-width: 600px) {
     .form-group {
       flex-direction: column;
