@@ -107,25 +107,3 @@ body {
     text-align: center;
   }
   
-  @media (max-width: 600px) {
-    .form-group {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .form-container {
-      padding: 20px;
-    }
-  
-    input,
-    select,
-    input[type="date"] {
-      font-size: 14px;
-    }
-  
-    button {
-      font-size: 16px;
-      padding: 12px;
-    }
-  }
-  
