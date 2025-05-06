@@ -6,6 +6,8 @@
   <title>Formulaire Assurance</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 <body>
   <div class="form-container">
@@ -15,9 +17,6 @@
       <div class="form-group">
         <input type="text" name="nom" placeholder="Nom" required />
         <input type="text" name="prenom" placeholder="Prénom" required />
-      </div>
-
-      <div class="form-group">
         <input type="email" name="email" placeholder="Email" required />
         <input type="tel" name="telephone" placeholder="Téléphone" required />
       </div>
@@ -35,14 +34,19 @@
 
       <div class="form-group full-width">
         <label for="date_achat">Date d'achat du matériel</label>
-        <input type="date" name="date_achat" id="date_achat" required />
+        <input type="text" id="date_achat" name="date_achat" placeholder="JJ/MM/AAAA">
       </div>
-
       <button type="submit">Envoyer</button>
       <p id="status-message"></p>
     </form>  
   </div>
-
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
+<script>
+  flatpickr("#date_achat", {
+    dateFormat: "d/m/Y",
+    locale: "fr"
+  });
+</script>
 </body>
 </html>
