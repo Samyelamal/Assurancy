@@ -49,12 +49,13 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 20px;
+    align-items: center;
   }
-  
-  .full-width {
-    flex-direction: column;
-  }
-  
+
+  .full-width{
+  flex-direction: column;
+  align-items: center;
+}
   input,
   select,
   input[type="date"] {
