@@ -69,10 +69,17 @@ body {
     text-transform: uppercase;
     display: block;
     margin: 0 auto;
-    text-align: center;
     width: 200px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
   }
-
+  
   button {
     width: 100%;
     padding: 14px;
